@@ -29,27 +29,16 @@ logger = logging.getLogger(__name__)
 logger.info("=== BOT STARTING ===")
 
 
-load_dotenv()  # загружает переменные из .env файла
-BOT_TOKEN = os.getenv("BOT_TOKEN")  # получает значение BOT_TOKEN
+load_dotenv()  
+BOT_TOKEN = os.getenv("BOT_TOKEN") 
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
 
-SUPER_ADMIN_ID = 7752934373  # Замените на ID супер-админа
-SUPER_ADMIN_TAG = "@maxtechops"  # Замените на тег супер-админа
+SUPER_ADMIN_ID = os.getenv("SUPER_ADMIN_ID")  
+SUPER_ADMIN_TAG = os.getenv("SUPER_ADMIN_TAG")  
 
-# Вайт-лист пользователей, которым разрешен доступ к боту
-# Формат: {user_id: role}
-WHITELIST = {
-    SUPER_ADMIN_ID: "super-admin",  # Add super admin to whitelist automatically
-    7772536909: "admin",  # Пример: замените на реальные ID пользователей
-    7310137200: "admin",   # Администратор 1
-    6972085618: "admin",   # Администратор 2
-    7772536909: "admin",   # Администратор 3
-    7600649312: "admin",   # Администратор 4
-    7772536804: "user",    # Обычный пользователь 1
-
-}
+WHITELIST = {int(item.split(':')[0]): item.split(':')[1] for item in os.getenv('WHITELIST', '').split(',')}
 
 EXAMPLE_CONFIG = """example@mail.com
 API_KEY_EXAMPLE
