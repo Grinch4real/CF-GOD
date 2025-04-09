@@ -1,0 +1,11 @@
+2025-04-09 12:19:40,282 - __main__ - INFO - === BOT STARTING ===
+2025-04-09 12:19:58,180 - __main__ - INFO - === BOT STARTING ===
+2025-04-09 12:19:58,183 - __main__ - INFO - === BOT STARTING ===
+2025-04-09 12:19:58,183 - __main__ - INFO - Current whitelist: {7752934373: 'super-admin', 7772536909: 'admin', 7310137200: 'admin', 6972085618: 'admin', 7600649312: 'admin', 7772536804: 'user'}
+2025-04-09 12:19:58,183 - __main__ - INFO - Starting bot in polling mode...
+2025-04-09 12:20:10,040 - __main__ - INFO - User 7752934373 started the bot
+2025-04-09 12:20:10,040 - __main__ - INFO - Checking access for user ID: 7752934373
+2025-04-09 12:20:10,041 - __main__ - INFO - Access for user 7752934373: Granted
+2025-04-09 12:20:14,062 - __main__ - INFO - Starting bot in polling mode...
+2025-04-09 12:20:15,076 - __main__ - INFO - Bot stopped by user
+2025-04-09 12:20:15,076 - __main__ - INFO - === BOT SHUTDOWN ===
